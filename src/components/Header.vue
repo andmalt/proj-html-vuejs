@@ -12,36 +12,33 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 d-flex flex-column align-items-end">
-                <div class="m-box text-center py-2 mb-3">
-                    <p> {{  }} </p> 
-                    <p> Demos </p>
-                </div>
-
-                <div class="m-box text-center py-2">
-                    <p> {{  }} </p>
-                    <p> On sale </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center pb-5">
+        <div class="row justify-content-center align-items-center pb-5">
             <div class="col-6">
                 <div class="row justify-content-end pb-5">
                     <div class="col-8">
                         <h1>Barber Shop</h1>
-                        <div class="br"></div>
-                        <p>The Pinnacle of Male Grooming</p>
-                        <button><a href="#learnMore"></a>LEARN MORE</button> 
+                        <div class="br mb-4"></div>
+                        <p class="mb-4">The Pinnacle of Male Grooming</p>
+                        <button class="btn_header"><a href="#learnMore"></a>LEARN MORE</button> 
                     </div>
                 </div>                              
             </div>
 
             <div class="col-6">
-                <div class="row justify-content-center align-items-center pb-5">
+                <div class="row justify-content-center pb-5">
                     <div class="col-8 img-h">
-                        <img src="../assets/img/avadabarbers_hero_focalmirror-800x1100.png" alt="image barber in action"> 
+                        <img src="../assets/img/avadabarbers_hero_focalmirror-800x1100.png" alt="a barber at work"> 
+                    </div>
+                    <div class="col-4 d-flex flex-column align-items-end">
+                        <div class="m-box text-center py-2 mb-3">
+                            <p> {{  }} </p> 
+                            <p> Demos </p>
+                        </div>
+
+                        <div class="m-box text-center py-2">
+                            <p> {{  }} </p>
+                            <p> On sale </p>
+                        </div>
                     </div>
                 </div>     
             </div>
@@ -68,6 +65,13 @@ export default {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    h1{
+        color: $bigTitle;
+        font-size: 4.5rem;
+    }
+    p{
+        color: $pHeader;
+    }
     .fas{
         color: white;
         margin-left: 1.5rem;
@@ -90,11 +94,21 @@ export default {
         }
     }
     .img-h{
-        height: 4rem;
+        height: 30rem;
         img{
             height: 100%;
-            transform: scale(5);
         }
+    }
+    .br{
+        width: 50%;
+        height: 2px;
+        background-color: $refColor;
+    }
+    .btn_header{
+        background-color: rgba( 0, 0, 0, 0);
+        padding: 0.7rem 1.4rem;
+        border-color: $refColor;
+        color: $refColor;
     }
 }
 
