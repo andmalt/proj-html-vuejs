@@ -19,7 +19,7 @@
                         <h1>Barber Shop</h1>
                         <div class="br mb-4"></div>
                         <p class="mb-4">The Pinnacle of Male Grooming</p>
-                        <button class="btn_header"><a href="#learnMore"></a>LEARN MORE</button> 
+                        <button class="btn_header"><a href="#learnMore">LEARN MORE</a></button> 
                     </div>
                 </div>                              
             </div>
@@ -106,9 +106,14 @@ export default {
     }
     .btn_header{
         background-color: rgba( 0, 0, 0, 0);
-        padding: 0.7rem 1.4rem;
+        padding: 0.7rem 1.5rem;
         border-color: $refColor;
         color: $refColor;
+        a{
+          color: $refColor;
+          text-decoration: none;
+          font-size: 0.9rem;  
+        }
     }
 }
 
