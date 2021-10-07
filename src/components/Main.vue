@@ -47,10 +47,28 @@
         </div>
       </div>
 
-      <div class="col-12 text-center">
+      <div class="col-12 text-center mb-5">
         <button class="btn_main"><a href="#readAboutourServices">READ ABOUT OUR SERVICES</a></button>
       </div>
+      <!-- black triangle -->
+      <div class="col-12">
+        <div class="triangle">
+          <!-- svg -->
+        </div>
+      </div>
 
+    </section>
+
+    <section class="row " id="products-m">
+      <!-- title -->
+      <div class="col-12 text-center py-3 mb-5">
+        <h6>WE HAVE YOU CONCERED</h6>
+        <h2>Avada Groming Products</h2>
+      </div>
+      <!-- products -->
+      <div>
+
+      </div>
     </section>
     
   </main>
@@ -67,7 +85,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '../style/general.scss';
 @import '../style/variables.scss';
 
 #after-h{
@@ -122,7 +139,7 @@ export default {
     }
   }
   .box-s{
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 
     img{
       height: 5rem;
@@ -134,6 +151,39 @@ export default {
     }
     p{
       color: $pHeader;
+    }
+  }
+  .triangle{
+    height: 5rem;
+    background-image: url(../assets/triangle.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(20);
+    filter: brightness(0) saturate(100%) invert(4%) sepia(2%) saturate(5488%) hue-rotate(211deg) brightness(84%) contrast(91%);
+  }
+}
+#products-m{
+  background-image: url(../assets/img/avadabarbers-reviewsbackground.jpg); 
+  background-position: top;
+  background-size: cover;
+
+  h6{
+    color: $refColor;
+  }
+  h2{
+    color: $titles;
+    font-size: 3.5rem;
+  }
+  .btn_main{
+    background-color: rgba( 0, 0, 0, 0);
+    padding: 0.7rem 1.5rem;
+    border-color: $refColor;
+    color: $refColor;
+    a{
+      color: $refColor;
+      text-decoration: none;
+      font-size: 0.9rem;  
     }
   }
 }
