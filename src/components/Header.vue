@@ -66,10 +66,12 @@ export default {
     background-repeat: no-repeat;
     h1{
         color: $bigTitle;
-        font-size: 4.5rem;
+        font-size: 4.3rem;
+        font-weight: 600;
     }
     p{
         color: $pHeader;
+        font-size: 1.2rem;
     }
     .fas{
         color: white;
@@ -90,6 +92,7 @@ export default {
         border-radius: 6px;
         p{
             margin: 0;
+            font-size: 1rem;
         }
     }
     .img-h{

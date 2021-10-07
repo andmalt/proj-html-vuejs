@@ -125,7 +125,20 @@
 
     </section>
 
-    
+    <!-- section blog post -->
+    <section class="row" id="blog-post">
+      <div class="col-12 mb-5">
+        <div class="triangle">
+          <!-- svg -->
+        </div>
+      </div>
+
+      <!-- title -->
+      <div class="col-12 text-center py-3 mb-5">
+        <h6>TALES FROM THE BARBER SHOP</h6>
+        <h2>Recent Blog Posts</h2>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -149,6 +162,7 @@ export default {
 
 h6{
 color: $refColor;
+font-weight: 600;
 }
 h4{
   color: $refColor;    
@@ -156,6 +170,7 @@ h4{
 h2{
   color: $titles;
   font-size: 3.5rem;
+  font-weight: 600;
 }
 p{
   color: $pHeader;
@@ -244,6 +259,18 @@ p{
     height: 6rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+  }
+}
+#blog-post{
+  background-color: $bigTitle;
+
+  .triangle{
+    height: 5rem;
+    background-image: url(../assets/triangle.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scaleX(20) rotate(0.5turn);
   }
 }
 </style>
