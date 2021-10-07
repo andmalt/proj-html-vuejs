@@ -99,14 +99,33 @@
     </div>
     
     <!-- section reviews -->
-    <section class="row" id="reviews">
+    <section class="row justify-content-center pb-5" id="reviews">
       <div class="col-12 text-center py-3 mb-5">
         <h6>WHAT PEOPLE SAY</h6>
         <h2>Reviews</h2>
       </div>
 
+      <div class="col-3 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolore similique veniam repellat nostrum explicabo molestias temporibus expedita, ipsum, veritatis laboriosam aliquid amet vel illo itaque at modi voluptate eos!</p>
+        <img src="../assets/img/avadabarbers-trimcut-gallery6.jpg" alt="photo John Doe">
+        <p><em>John Doe</em></p>
+      </div>
+
+      <div class="col-3 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolore similique veniam repellat nostrum explicabo molestias temporibus expedita, ipsum, veritatis laboriosam aliquid amet vel illo itaque at modi voluptate eos!</p>
+        <img src="../assets/img/avadabarbers-trimcut-gallery7.jpg" alt="photo Pete Jones">
+        <p><em>Pete Jones</em></p>
+      </div>
+
+      <div class="col-3 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolore similique veniam repellat nostrum explicabo molestias temporibus expedita, ipsum, veritatis laboriosam aliquid amet vel illo itaque at modi voluptate eos!</p>
+        <img src="../assets/img/avadabarbers-trimcut-gallery3.jpg" alt="photo Mark Wilkson">
+        <p><em>Mark Wilkson</em></p>
+      </div>
 
     </section>
+
+    
   </main>
 </template>
 
@@ -130,6 +149,9 @@ export default {
 
 h6{
 color: $refColor;
+}
+h4{
+  color: $refColor;    
 }
 h2{
   color: $titles;
@@ -174,12 +196,9 @@ p{
       margin-bottom: 2rem;
     }
     h4{
-      color: $refColor;
       margin-bottom: 2rem;
     }
-    p{
-      color: $pHeader;
-    }
+
   }
   .triangle{
     height: 5rem;
@@ -214,6 +233,17 @@ p{
   .bg-o{
     background-color: $bg;
     
+  }
+}
+#reviews{
+  em{
+    color: $refColor;
+    font-weight: 600;
+  }
+  img{
+    height: 6rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
   }
 }
 </style>
