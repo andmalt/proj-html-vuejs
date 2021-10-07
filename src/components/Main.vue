@@ -1,5 +1,6 @@
 <template>
   <main class="container-fluid">
+
     <!-- section after header -->
     <section class="row" id="after-h">
       <div class="col-12 d-flex justify-content-center">
@@ -15,6 +16,7 @@
         </div>
       </div>
     </section>
+
     <!-- section services -->
     <section class="row justify-content-center px-5" id="services">
       <!-- title -->
@@ -59,7 +61,8 @@
 
     </section>
 
-    <section class="row " id="products-m">
+    <!-- section products -->
+    <section class="row pb-5" id="products-m">
       <!-- title -->
       <div class="col-12 text-center py-3 mb-5">
         <h6>WE HAVE YOU CONCERED</h6>
@@ -70,11 +73,35 @@
       <Box :product="element" v-for="(element , index ) in products" :key="index" />
 
       <!-- button -->
-      <div>
-
+      <div class="col-12 text-center mb-5">
+        <button class="btn_main"><a href="#shopOurProductRange">SHOP OUR PRODUCT RANGE</a></button>
       </div>
     </section>
+
+    <!-- product advertisement -->
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-8" id="advertisement">
+        <div class="row">
+          <div class="col-5 bg_p text-center">
+            <img src="../assets/img/shaving_butter-800x800.png" alt="image shaving butter">
+          </div>
+
+          <div class="col-7 bg-o">
+            <div class="p-5 ">
+              <h6>THIS MONTHS FEATURED PRODUCT</h6>
+              <h2>Shaving Butter</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illum natus rerum exercitationem obcaecati beatae deserunt maxime neque asperiores!</p>
+              <button class="btn_main"><a href="#buyNow">BUY NOW</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <!-- section review -->
+    <section class="row">
+
+    </section>
   </main>
 </template>
 
@@ -193,6 +220,46 @@ export default {
       color: $refColor;
       text-decoration: none;
       font-size: 0.9rem;  
+    }
+  }
+}
+#advertisement{
+  border-top: 4px solid $refColor;
+  position: relative;
+  z-index: 2;
+  right: 40px;
+  bottom: 40px;
+
+  .bg_p{
+    background-image: url(../assets/img/avadabarbers-cta-background.jpg);
+    background-position: center;
+    background-size: cover;
+    img{
+      height: 20rem;
+    }
+  }
+  .bg-o{
+    background-color: $bg;
+    h6{
+    color: $refColor;
+    }
+    h2{
+      color: $titles;
+      font-size: 3.5rem;
+    }
+    p{
+      color: $pHeader;
+    }
+    .btn_main{
+      background-color: rgba( 0, 0, 0, 0);
+      padding: 0.7rem 1.5rem;
+      border-color: $refColor;
+      color: $refColor;
+      a{
+        color: $refColor;
+        text-decoration: none;
+        font-size: 0.9rem;  
+      }
     }
   }
 }
