@@ -65,7 +65,11 @@
         <h6>WE HAVE YOU CONCERED</h6>
         <h2>Avada Groming Products</h2>
       </div>
+
       <!-- products -->
+      <Box :product="element" v-for="(element , index ) in products" :key="index" />
+
+      <!-- button -->
       <div>
 
       </div>
@@ -75,11 +79,16 @@
 </template>
 
 <script>
+import Box from './Box.vue'
+
 export default {
   name: 'Main',
   props: {
-
-  }
+    products:Array,
+  },
+  components:{
+    Box,
+  },
 }
 </script>
 

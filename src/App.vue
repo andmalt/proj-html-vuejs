@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main />
+    <Main :products="products" />
     <Footer />
   </div>
 </template>
@@ -17,7 +17,38 @@ export default {
     Header,
     Main,
     Footer,
-  }
+  },
+  data(){
+    return{
+      products:[
+        {
+          name: 'Brush',
+          price: 15,
+          img:require(`./assets/img/brush_dark-800x800.png`),
+          alt:'image brush',
+        },
+        {
+          name: 'Scissors',
+          price: 85,
+          img:require(`./assets/img/scissors-800x800.png`),
+          alt:'image Scissors',
+        },
+        {
+          name: 'Hot Oil',
+          price: 15,
+          img:require(`./assets/img/hot_oil_dark-800x800.png`),
+          alt:'image Hot Oil',
+        },
+        {
+          name: 'Straight Razor',
+          price: 30,
+          img:require(`./assets/img/straight_razor_dark-800x800.png`),
+          alt:'image Straight Razor',
+        },
+      ],
+    }
+  },
+  
 }
 </script>
 
