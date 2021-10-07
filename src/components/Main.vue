@@ -98,8 +98,13 @@
       </div>
     </div>
     
-    <!-- section review -->
-    <section class="row">
+    <!-- section reviews -->
+    <section class="row" id="reviews">
+      <div class="col-12 text-center py-3 mb-5">
+        <h6>WHAT PEOPLE SAY</h6>
+        <h2>Reviews</h2>
+      </div>
+
 
     </section>
   </main>
@@ -123,28 +128,33 @@ export default {
 <style scoped lang="scss">
 @import '../style/variables.scss';
 
+h6{
+color: $refColor;
+}
+h2{
+  color: $titles;
+  font-size: 3.5rem;
+}
+p{
+  color: $pHeader;
+}
+.btn_main{
+  background-color: rgba( 0, 0, 0, 0);
+  padding: 0.7rem 1.5rem;
+  border-color: $refColor;
+  color: $refColor;
+  a{
+    color: $refColor;
+    text-decoration: none;
+    font-size: 0.9rem;  
+  }
+}
+
 #after-h{
   background-image: url(../assets/img/avadabarbers-about-introbackground.jpg); 
   background-position: top;
   background-size: cover;
-  h6{
-    color: $refColor;
-  }
-  h2{
-    color: $titles;
-    font-size: 3.5rem;
-  }
-  .btn_main{
-    background-color: rgba( 0, 0, 0, 0);
-    padding: 0.7rem 1.5rem;
-    border-color: $refColor;
-    color: $refColor;
-    a{
-      color: $refColor;
-      text-decoration: none;
-      font-size: 0.9rem;  
-    }
-  }
+
   .triangle{
     height: 5rem;
     background-image: url(../assets/triangle.svg);
@@ -156,24 +166,6 @@ export default {
 
 }
 #services{
-  h6{
-    color: $refColor;
-  }
-  h2{
-    color: $titles;
-    font-size: 3.5rem;
-  }
-  .btn_main{
-    background-color: rgba( 0, 0, 0, 0);
-    padding: 0.7rem 1.5rem;
-    border-color: $refColor;
-    color: $refColor;
-    a{
-      color: $refColor;
-      text-decoration: none;
-      font-size: 0.9rem;  
-    }
-  }
   .box-s{
     margin-bottom: 3.5rem;
 
@@ -203,25 +195,6 @@ export default {
   background-image: url(../assets/img/avadabarbers-reviewsbackground.jpg); 
   background-position: top;
   background-size: cover;
-
-  h6{
-    color: $refColor;
-  }
-  h2{
-    color: $titles;
-    font-size: 3.5rem;
-  }
-  .btn_main{
-    background-color: rgba( 0, 0, 0, 0);
-    padding: 0.7rem 1.5rem;
-    border-color: $refColor;
-    color: $refColor;
-    a{
-      color: $refColor;
-      text-decoration: none;
-      font-size: 0.9rem;  
-    }
-  }
 }
 #advertisement{
   border-top: 4px solid $refColor;
@@ -240,27 +213,7 @@ export default {
   }
   .bg-o{
     background-color: $bg;
-    h6{
-    color: $refColor;
-    }
-    h2{
-      color: $titles;
-      font-size: 3.5rem;
-    }
-    p{
-      color: $pHeader;
-    }
-    .btn_main{
-      background-color: rgba( 0, 0, 0, 0);
-      padding: 0.7rem 1.5rem;
-      border-color: $refColor;
-      color: $refColor;
-      a{
-        color: $refColor;
-        text-decoration: none;
-        font-size: 0.9rem;  
-      }
-    }
+    
   }
 }
 </style>
