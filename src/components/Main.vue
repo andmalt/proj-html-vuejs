@@ -126,7 +126,7 @@
     </section>
 
     <!-- section blog post -->
-    <section class="row justify-content-center" id="blog-post">
+    <section class="row justify-content-center pb-5" id="blog-post">
       <div class="col-12 mb-5">
         <div class="triangle">
           <!-- svg -->
