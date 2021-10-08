@@ -188,17 +188,21 @@ export default {
 h6{
 color: $refColor;
 font-weight: 600;
+font-family: $fontParag;
 }
 h4{
-  color: $refColor;    
+  color: $refColor;
+  font-family: $fontTitle;    
 }
 h2{
   color: $titles;
   font-size: 3.5rem;
   font-weight: 600;
+  font-family: $fontTitle;
 }
 p{
   color: $pHeader;
+  font-family: $fontParag;
 }
 
 a{
@@ -207,6 +211,7 @@ a{
   padding: 0.7rem 1.5rem;
   border:2px solid $refColor;
   font-size: 0.9rem; 
+  font-family: $fontParag;
   &:hover{
     color: $hoverRef;
     border-color: $hoverRef;

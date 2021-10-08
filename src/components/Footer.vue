@@ -69,6 +69,7 @@ export default {
       border:2px solid $refColor;
       color: $refColor;
       text-decoration: none;
+      font-family: $fontParag;
       &:hover{
         color: $hoverRef;
         border-color: $hoverRef;
@@ -83,6 +84,7 @@ export default {
     }
     p{
       color: $titles;
+      font-family: $fontParag;
     }
   }
 }
@@ -92,6 +94,7 @@ export default {
     margin: 0;
     color: $titles;
     font-size: 0.8rem;
+    font-family: $fontParag;
   }
 }
 </style>

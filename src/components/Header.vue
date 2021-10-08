@@ -66,12 +66,14 @@ export default {
     background-repeat: no-repeat;
     h1{
         color: $bigTitle;
+        font-family: $fontTitle;
         font-size: 4.3rem;
         font-weight: 600;
     }
     p{
         color: $pHeader;
         font-size: 1.2rem;
+        font-family: $fontParag;
     }
     .h-h{
         a{
@@ -80,6 +82,7 @@ export default {
             padding: 0.7rem 1.5rem;
             border:2px solid $refColor;
             font-size: 0.9rem; 
+            font-family: $fontParag;
             &:hover{
                 color: $hoverRef;
                 border-color: $hoverRef;

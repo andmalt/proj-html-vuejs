@@ -22,7 +22,8 @@ export default {
 #socials{
   h6{
     color: $refColor;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: $fontParag;
   }
   ul{
     padding: 0;

@@ -30,9 +30,11 @@ export default {
       color: $refColor;
       margin-bottom: 2rem;
       font-weight: 600;
+      font-family: $fontTitle;
     }
     p{
       color: $refColor;
+      font-family: $fontParag;
     }
 }
 </style>
