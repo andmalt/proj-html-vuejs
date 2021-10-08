@@ -37,7 +37,7 @@
                             </div>
 
                             <div id="box2">
-                                <p>  </p>
+                                <p> &dollar; 39.00 </p>
                                 <p> On sale </p>
                             </div>
                         </div>
@@ -53,7 +53,6 @@
 export default {
     name:'Header',
     props: {
-
   },
 }
 </script>
