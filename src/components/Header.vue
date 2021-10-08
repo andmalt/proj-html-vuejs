@@ -29,15 +29,17 @@
                     <div class="col-8 img-h">
                         <img src="../assets/img/avadabarbers_hero_focalmirror-800x1100.png" alt="a barber at work"> 
                     </div>
-                    <div class="col-4 d-flex flex-column align-items-end">
-                        <div class="m-box text-center py-2 mb-3">
-                            <p> {{  }} </p> 
-                            <p> Demos </p>
-                        </div>
+                    <div class="col-4 d-flex flex-column align-items-end" id="h-box"> 
+                        <div class="m-box">
+                            <div id="box1">
+                                <p><a href="#shop"><i class="fas fa-cart-arrow-down"></i></a> </p> 
+                                <p> Demos </p>
+                            </div>
 
-                        <div class="m-box text-center py-2">
-                            <p> {{  }} </p>
-                            <p> On sale </p>
+                            <div id="box2">
+                                <p>  </p>
+                                <p> On sale </p>
+                            </div>
                         </div>
                     </div>
                 </div>     
@@ -103,15 +105,40 @@ export default {
             height: 3.2rem;
         }
     }
-    .m-box{
-        background-color: $bigTitle;
-        width: 4rem;
-        border-radius: 6px;
-        p{
-            margin: 0;
-            font-size: 1rem;
+    #h-box{
+
+        .m-box{   
+            position: fixed;         
+            width: 4rem;
+            z-index: 5;
+            height: 12rem;
+            
+            #box1,
+            #box2{
+                width: 100%;
+                height: 4rem;
+                margin-bottom: 1rem;
+                background-color: $titles;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .fas{
+                    color: $pHeader;
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            
         }
     }
+    
     .img-h{
         height: 30rem;
         img{

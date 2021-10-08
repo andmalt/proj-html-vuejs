@@ -90,7 +90,7 @@
             <div class="p-5 ">
               <h6>THIS MONTHS FEATURED PRODUCT</h6>
               <h2>Shaving Butter</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illum natus rerum exercitationem obcaecati beatae deserunt maxime neque asperiores!</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illum natus rerum exercitationem obcaecati beatae deserunt maxime neque asperiores!</p>
               <a href="#buyNow">BUY NOW</a>
             </div>
           </div>
