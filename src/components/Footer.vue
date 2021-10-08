@@ -5,7 +5,7 @@
 
       <div class="col-3 f-img pb-2">
         <img src="../assets/img/avadabarbers_footer_shop_image-700x546.png" alt="image products Avada Barbers">
-        <a href="#">SHOP OUR RANGE NOW</a>
+        <a href="#shopOurRangeNow">SHOP OUR RANGE NOW</a>
       </div>
 
       <div class="col-3 p-2">
@@ -14,7 +14,8 @@
           <!-- logo -->
           <img src="../assets/img/avadabarbers-logo-x1.png" alt="logo Avada Barbers">
 
-          <p>Avada Barbers 123 <br> New York Street <br> New York City <br> info@yourwebsite.com <br> +1(555)555-1212</p>
+          <!-- address -->
+          <p>Avada Barbers <br> 123 New York Street <br> New York City <br> info@yourwebsite.com <br> +1(555)555-1212</p>
         </div>
 
         <!-- div socials -->
@@ -24,14 +25,16 @@
 
       <div class="col-3 f-img pb-2">
         <img src="../assets/img/avadabarbers_footer_appointment_image-800x624.png" alt="image Barber at work">
-        <a href="#">BOOK YOUR APPOINTMENT</a>
+        <a href="#bookYourAppointment">BOOK YOUR APPOINTMENT</a>
       </div>
 
     </section>
 
     <!-- footer of the footer -->
-    <section id="f-f">
-
+    <section class="row text-center py-4" id="f-f">
+      <div>
+        <p>&copy; Copyright 2012-2020|Avada Themes by andmalt|All Rights Reserved</p>
+      </div>
     </section>
   </footer>
 </template>
@@ -66,6 +69,10 @@ export default {
       border:2px solid $refColor;
       color: $refColor;
       text-decoration: none;
+      &:hover{
+        color: $hoverRef;
+        border-color: $hoverRef;
+      } 
     }
   }
   .f-img-l{
@@ -79,5 +86,12 @@ export default {
     }
   }
 }
-
+#f-f{
+  background-color: $bgF;
+  p{
+    margin: 0;
+    color: $titles;
+    font-size: 0.8rem;
+  }
+}
 </style>

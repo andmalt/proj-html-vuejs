@@ -160,7 +160,7 @@
 
       <!-- button -->
       <div class="col-12 text-center my-5">
-        <button class="btn_main"><a href="#readAboutourServices">READ MORE FROM OUR BLOG</a></button>
+        <a href="#readAboutourServices">READ MORE FROM OUR BLOG</a>
       </div>
 
     </section>
@@ -200,23 +200,17 @@ h2{
 p{
   color: $pHeader;
 }
-.btn_main{
-  background-color: rgba( 0, 0, 0, 0);
-  padding: 0.7rem 1.5rem;
-  border-color: $refColor;
+
+a{
   color: $refColor;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border:2px solid $refColor;
+  font-size: 0.9rem; 
   &:hover{
-    border-color: $hoverRef;
     color: $hoverRef;
-  }
-  a{
-    color: $refColor;
-    text-decoration: none;
-    font-size: 0.9rem; 
-    &:hover{
-      color: $hoverRef;
-    } 
-  }
+    border-color: $hoverRef;
+  } 
 }
 
 #after-h{
