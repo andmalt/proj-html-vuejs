@@ -15,11 +15,11 @@
         <div class="row justify-content-center align-items-center pb-5">
             <div class="col-6">
                 <div class="row justify-content-end pb-5">
-                    <div class="col-8">
+                    <div class="col-8 h-h">
                         <h1>Barber Shop</h1>
                         <div class="br mb-4"></div>
                         <p class="mb-4">The Pinnacle of Male Grooming</p>
-                        <button class="btn_header"><a href="#learnMore">LEARN MORE</a></button> 
+                        <a href="#learnMore">LEARN MORE</a>
                     </div>
                 </div>                              
             </div>
@@ -73,6 +73,20 @@ export default {
         color: $pHeader;
         font-size: 1.2rem;
     }
+    .h-h{
+        a{
+            color: $refColor;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border:2px solid $refColor;
+            font-size: 0.9rem; 
+            &:hover{
+                color: $hoverRef;
+                border-color: $hoverRef;
+            } 
+        }
+    }
+    
     .fas{
         color: white;
         margin-left: 1.5rem;
@@ -105,17 +119,6 @@ export default {
         width: 50%;
         height: 2px;
         background-color: $refColor;
-    }
-    .btn_header{
-        background-color: rgba( 0, 0, 0, 0);
-        padding: 0.7rem 1.5rem;
-        border-color: $refColor;
-        color: $refColor;
-        a{
-          color: $refColor;
-          text-decoration: none;
-          font-size: 0.9rem;  
-        }
     }
 }
 

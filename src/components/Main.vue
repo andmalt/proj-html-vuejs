@@ -6,8 +6,8 @@
       <div class="col-12 d-flex justify-content-center">
         <div class="p-5 text-center ">
           <h6>AWARD WINNING</h6>
-          <h2>Pro Barbers</h2>
-          <button class="btn_main"><a href="#meetYourNewBarber">MEET YOUR NEW BARBER</a></button>
+          <h2 class="mb-4">Pro Barbers</h2>
+          <a href="#meetYourNewBarber">MEET YOUR NEW BARBER</a>
         </div>
       </div>
       <div class="col-12">
@@ -50,7 +50,7 @@
       </div>
 
       <div class="col-12 text-center mb-5">
-        <button class="btn_main"><a href="#readAboutourServices">READ ABOUT OUR SERVICES</a></button>
+        <a href="#readAboutourServices">READ ABOUT OUR SERVICES</a>
       </div>
       <!-- black triangle -->
       <div class="col-12">
@@ -74,12 +74,12 @@
 
       <!-- button -->
       <div class="col-12 text-center mb-5">
-        <button class="btn_main"><a href="#shopOurProductRange">SHOP OUR PRODUCT RANGE</a></button>
+        <a href="#shopOurProductRange">SHOP OUR PRODUCT RANGE</a>
       </div>
     </section>
 
     <!-- product advertisement -->
-    <div class="row justify-content-center mb-5 pb-5">
+    <div class="row justify-content-center mb-3 pb-5">
       <div class="col-8" id="advertisement">
         <div class="row">
           <div class="col-5 bg_p text-center">
@@ -91,7 +91,7 @@
               <h6>THIS MONTHS FEATURED PRODUCT</h6>
               <h2>Shaving Butter</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illum natus rerum exercitationem obcaecati beatae deserunt maxime neque asperiores!</p>
-              <button class="btn_main"><a href="#buyNow">BUY NOW</a></button>
+              <a href="#buyNow">BUY NOW</a>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
     
     <!-- section reviews -->
     <section class="row justify-content-center pb-5" id="reviews">
-      <div class="col-12 text-center py-3 mb-5">
+      <div class="col-12 text-center pb-3 mb-5">
         <h6>WHAT PEOPLE SAY</h6>
         <h2>Reviews</h2>
       </div>
@@ -160,7 +160,7 @@
 
       <!-- button -->
       <div class="col-12 text-center my-5">
-        <a href="#readAboutourServices">READ MORE FROM OUR BLOG</a>
+        <a href="#readMoreFromOurBlog">READ MORE FROM OUR BLOG</a>
       </div>
 
     </section>
@@ -224,7 +224,7 @@ a{
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: scaleX(20);
+    transform: scaleX(24);
   }
 
 }
@@ -238,6 +238,7 @@ a{
     }
     h4{
       margin-bottom: 2rem;
+      font-weight: 600;
     }
 
   }
@@ -247,7 +248,7 @@ a{
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: scaleX(20);
+    transform: scaleX(24);
     filter: brightness(0) saturate(100%) invert(4%) sepia(2%) saturate(5488%) hue-rotate(211deg) brightness(84%) contrast(91%);
   }
 }
@@ -300,7 +301,7 @@ a{
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    transform: scaleX(20) rotate(0.5turn);
+    transform: scaleX(24) rotate(0.5turn);
   }
   h4{
     font-weight: 600;    
