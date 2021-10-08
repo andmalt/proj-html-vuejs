@@ -126,7 +126,7 @@
     </section>
 
     <!-- section blog post -->
-    <section class="row" id="blog-post">
+    <section class="row justify-content-center" id="blog-post">
       <div class="col-12 mb-5">
         <div class="triangle">
           <!-- svg -->
@@ -138,6 +138,31 @@
         <h6>TALES FROM THE BARBER SHOP</h6>
         <h2>Recent Blog Posts</h2>
       </div>
+
+      <!-- columns -->
+      <div class="col-3 text-center">
+        <img src="../assets/img/avadabarbers-second-blog-700x441.jpg" alt="image avada barbers">
+        <h4>Avada Barbers Now Open</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis sapiente animi quis id reiciendis eaque quod tenetur pariatur quos hic illo aut alias optio sunt voluptatem quam, nobis recusandae.</p>
+      </div>
+
+      <div class="col-3 text-center">
+        <img src="../assets/img/avadabarbers-choosing-blog-700x441.jpg" alt="image local Avada Barbers">
+        <h4>Choosing The Right Barber</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis sapiente animi quis id reiciendis eaque quod tenetur pariatur quos hic illo aut alias optio sunt voluptatem quam, nobis recusandae.</p>
+      </div>
+
+      <div class="col-3 text-center">
+        <img src="../assets/img/avadabarbers-ourservice-blog-700x441.jpg" alt="image barber at work">
+        <h4>Quick Service Guide</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis sapiente animi quis id reiciendis eaque quod tenetur pariatur quos hic illo aut alias optio sunt voluptatem quam, nobis recusandae.</p>
+      </div>
+
+      <!-- button -->
+      <div class="col-12 text-center my-5">
+        <button class="btn_main"><a href="#readAboutourServices">READ MORE FROM OUR BLOG</a></button>
+      </div>
+
     </section>
   </main>
 </template>
@@ -180,10 +205,17 @@ p{
   padding: 0.7rem 1.5rem;
   border-color: $refColor;
   color: $refColor;
+  &:hover{
+    border-color: $hoverRef;
+    color: $hoverRef;
+  }
   a{
     color: $refColor;
     text-decoration: none;
-    font-size: 0.9rem;  
+    font-size: 0.9rem; 
+    &:hover{
+      color: $hoverRef;
+    } 
   }
 }
 
@@ -264,6 +296,10 @@ p{
 #blog-post{
   background-color: $bigTitle;
 
+  img{
+    height: 12rem;
+    margin-bottom: 1.2rem;
+  }
   .triangle{
     height: 5rem;
     background-image: url(../assets/triangle.svg);
@@ -271,6 +307,9 @@ p{
     background-repeat: no-repeat;
     background-size: contain;
     transform: scaleX(20) rotate(0.5turn);
+  }
+  h4{
+    font-weight: 600;    
   }
 }
 </style>
