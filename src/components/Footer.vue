@@ -17,15 +17,9 @@
           <p>Avada Barbers 123 <br> New York Street <br> New York City <br> info@yourwebsite.com <br> +1(555)555-1212</p>
         </div>
 
-        <div id="socials">
-          <h6>FOLLOW US</h6>
-          <ul class="d-flex justify-content-center">
-            <li><a href="#facebook" class="fab fa- fa-facebook"></a></li>
-            <li><a href="#twitter" class="fab fa- fa-twitter"></a></li>
-            <li><a href="#youtube" class="fab fa- fa-youtube"></a></li>
-            <li><a href="#instagram" class="fab fa- fa-instagram"></a></li>
-          </ul>
-        </div>
+        <!-- div socials -->
+        <Socials :socials="socials" />
+
       </div>
 
       <div class="col-3 f-img pb-2">
@@ -43,10 +37,16 @@
 </template>
 
 <script>
-export default {
-    name:'Footer',
-    props: {
+import Socials from './Socials.vue'
 
+export default {
+
+  name:'Footer',
+  components: { 
+    Socials,
+     },
+    props: {
+      socials:Array,
   },
 }
 </script>
@@ -76,24 +76,6 @@ export default {
     }
     p{
       color: $titles;
-    }
-  }
-}
-#socials{
-  h6{
-    color: $refColor;
-    font-weight: 600;
-  }
-  ul{
-    padding: 0;
-
-    li{
-      margin: 0.5rem;
-      list-style: none;
-      a{
-        color: $titles;
-        text-decoration: none;
-      }
     }
   }
 }

@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main :products="products" />
-    <Footer />
+    <Footer :socials="socials" />
   </div>
 </template>
 
@@ -46,6 +46,28 @@ export default {
           alt:'image Straight Razor',
         },
       ],
+      socials:[
+        {
+          nome:'facebook',
+          url:'#facebook',
+          class:'fab fa- fa-facebook',
+        },
+        {
+          nome:'twitter',
+          url:'#twitter',
+          class:'fab fa- fa-twitter',
+        },
+        {
+          nome:'youtube',
+          url:'#youtube',
+          class:'fab fa- fa-youtube',
+        },
+        {
+          nome:'instagram',
+          url:'#instagram',
+          class:'fab fa- fa-instagram',
+        }
+      ]
     }
   },
   
