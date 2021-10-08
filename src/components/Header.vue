@@ -95,9 +95,15 @@ export default {
         color: white;
         margin-left: 1.5rem;
         font-size: 0.9rem;
+        &:hover{
+                color: $hoverRef;
+            } 
     }
     .fa-bars{
             font-size: 1.5rem;
+            &:hover{
+                color: $hoverRef;
+            } 
         }
     .logo_h{
         img{
