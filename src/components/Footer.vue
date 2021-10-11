@@ -3,8 +3,9 @@
     <!-- main section -->
     <section class="row justify-content-center pt-3 pb-5" id="f-m">
 
-      <div class="col-3 f-img pb-2">
+      <div class="col-3 f-img pb-2 d-flex flex-column align-items-center">
         <img src="../assets/img/avadabarbers_footer_shop_image-700x546.png" alt="image products Avada Barbers">
+        
         <a href="#shopOurRangeNow">SHOP OUR RANGE NOW</a>
       </div>
 
@@ -23,7 +24,7 @@
 
       </div>
 
-      <div class="col-3 f-img pb-2">
+      <div class="col-3 f-img pb-2 d-flex flex-column align-items-center">
         <img src="../assets/img/avadabarbers_footer_appointment_image-800x624.png" alt="image Barber at work">
         <a href="#bookYourAppointment">BOOK YOUR APPOINTMENT</a>
       </div>
